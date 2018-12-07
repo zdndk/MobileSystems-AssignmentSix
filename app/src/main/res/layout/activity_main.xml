@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TableRow>
+                <TextView
+                    android:id="@+id/coordinatesHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Coordinates"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/coordinateLatitudeHeader"
+                    android:text="Latitude: "
+                    android:padding="2dip"
+                    android:textStyle="bold"/>
+                <TextView
+                android:id="@+id/coordinateLatitudeTextField"
+                android:text=""
+                    android:padding="2dip"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/coordinateLongitudeHeader"
+                    android:text="Longitude: "
+                    android:padding="2dip"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/coordinateLongitudeTextField"
+                    android:text=""
+                    android:padding="2dip"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/coordinateUpdateButton"
+                    android:text="Update"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TableRow>
+                <TextView
+                    android:id="@+id/orientationHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Orientation"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/orientationYHeader"
+                    android:text="y: "
+                    android:padding="2dip"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/orientationYTextField"
+                    android:text=""
+                    android:padding="2dip"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/orientationXHeader"
+                    android:text="x: "
+                    android:padding="2dip"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/orientationXTextField"
+                    android:text=""
+                    android:padding="2dip"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/orientationZHeader"
+                    android:text="z: "
+                    android:padding="2dip"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/orientationZTextField"
+                    android:text=""
+                    android:padding="2dip"/>
+            </TableRow>
+            <TableRow>
+                <TableLayout>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/chargingHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Charging"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/isChargingTextField"
+                            android:text="false"
+                            android:padding="2dip"
+                            />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/scantimeHeader"
+                            android:text="Scantime: "
+                            android:padding="2dip"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/scantimeTextField"
+                            android:text=""
+                            android:padding="2dip"/>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
